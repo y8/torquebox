@@ -56,6 +56,8 @@ Dir.glob("#{File.dirname(__FILE__)}/wunderboss-jars/*.jar") do |jar|
 end
 
 TorqueBox::Jars.register_and_require("#{File.dirname(__FILE__)}/torquebox-core.jar")
+
+require 'torquebox/composers'
 require 'torquebox/cli'
 require 'torquebox/cli/archive'
 require 'torquebox/cli/jar'
